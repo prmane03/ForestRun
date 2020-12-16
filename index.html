@@ -1,0 +1,47 @@
+<! doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
+<link rel="icon" href="img/logo.png">
+<title>ForestRun</title>
+=======
+
+<title>Running Game</title>
+>>>>>>> 5b5b8f319280185fd4023c04f2fac65a878f0c91
+<link href="game.css" rel="stylesheet">
+</head>
+<body onclick="jump()">
+    <span id="scorebox"></span>
+    <span  id="highscorebox" style="float:right">High Score : 0</span>
+    <div class ="game" id="game">
+        <img src="img/charb01.png" id="character">
+        <div id="block"></div>
+    </div>
+    <center>
+    <hr>
+    <b>Tap On Screen To Jump</b>
+    <hr><br>
+    <button onclick="start()">Start</button>
+    <button onclick="pause()">Pause</button>
+    <div id="choice">
+        <b>Choose Character</b><hr><br>
+        <input type="radio" id="boy" name="charChoice" value="boy">
+        <label for="boy"><img src="img/charb01.png" height="30px" width="20px"></label><br>
+        <input type="radio" id="cyborg" name="charChoice" value="cyborg">
+        <label for="cyborg"><img src="img/chara01.png" height="30px" width="20px"></label><br>
+        <input type="radio" id="man" name="charChoice" value="man">
+        <label for="man"><img src="img/charc01.png" height="30px" width="20px"></label><br>
+        <input type="checkbox" id="nightmode">
+        <label for="nightmode">Nightmode</label>
+        <hr>
+    </div>
+    <span id="msg"></span>
+    </center>
+
+<script src="game.js"></script>
+</body>
+</html>
+
+
+

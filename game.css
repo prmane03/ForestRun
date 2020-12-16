@@ -1,0 +1,49 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+.game {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url("img/bg01.jpg");
+    background-size: contain;
+    margin-bottom: 20px;
+}
+#character{
+    width:30px;
+    height: 50px;
+    //background-color: red;
+    position: relative;
+    top:150px;
+}
+.animate{
+    animation:jump 500ms;
+}
+#block{
+    width:20px;
+    height: 20px;
+    background-color: yellow;
+    position: relative;
+    top:130px;
+    border-radius: 10px 10px 5px 5px;
+    left: calc(100% - 20px);
+    //animation: none;
+    animation: block 1200ms infinite linear;
+}
+@keyframes block{
+    0%{left: calc(100% - 20px)}
+    100%{left:-40px}
+}
+@keyframes jump{
+    0%{top:150px}
+    30%{top:100px}
+    70%{top:100px}
+    100%{top:150px}
+}
+#choice{
+    margin:10px;
+    padding:5px;
+    color: white;
+    background-color: black;
+}
