@@ -34,7 +34,7 @@ function start(){
         i++;
         score +=10;
         scorebox.innerText = "Score : "+score;
-    },80);
+    },300);
 }
 
 function pause(){
